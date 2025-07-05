@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{adjustbox}
+\begin{document}
+
+\begin{table}[htbp]
+    \centering
+    \caption{Resultados dos Algoritmos TS e ACO}
+    \label{tab:ts_aco_results}
+    \adjustbox{max width=\textwidth}{%
+    \begin{tabular}{lrrrrrrrr}
+        \toprule
+        \textbf{Instância} & \multicolumn{2}{c}{\textbf{k}} & \multicolumn{2}{c}{\textbf{k-1}} & \multicolumn{2}{c}{\textbf{k-2}} & \multicolumn{2}{c}{\textbf{k-3}} \\
+        \cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9}
+        & \textbf{TS} & \textbf{ACO} & \textbf{TS} & \textbf{ACO} & \textbf{TS} & \textbf{ACO} & \textbf{TS} & \textbf{ACO} \\
+        \midrule
+        anna & 0.2028 & \textbf{0.0} & 0.4057 & \textbf{0.2028} & 0.6085 & \textbf{0.4057} & 0.8114 & \textbf{0.6085} \\
+        david & \textbf{0.0} & \textbf{0.0} & \textbf{0.2463} & \textbf{0.2463} & \textbf{0.7389} & \textbf{0.7389} & 1.2315 & \textbf{0.9852} \\
+        fpsol2.i.1 & \textbf{0.0} & 0.0086 & \textbf{0.0086} & 0.0172 & \textbf{0.0172} & 0.0257 & \textbf{0.0257} & 0.0343 \\
+        fpsol2.i.2 & \textbf{0.0115} & 0.0345 & \textbf{0.023} & 0.0575 & \textbf{0.046} & 0.0805 & \textbf{0.069} & 0.1036 \\
+        fpsol2.i.3 & \textbf{0.0115} & 0.0576 & \textbf{0.023} & 0.0460 & \textbf{0.046} & 0.0576 & \textbf{0.0691} & 0.0921 \\
+        games120 & \textbf{0.0} & \textbf{0.0} & \textbf{0.3135} & \textbf{0.3135} & 1.4107 & \textbf{1.2539} & 2.8213 & \textbf{2.5078} \\
+        homer & \textbf{0.0} & \textbf{0.0} & 0.1229 & \textbf{0.0614} & 0.2457 & \textbf{0.1843} & 0.4914 & \textbf{0.3686} \\
+        huck & \textbf{0.0} & \textbf{0.0} & \textbf{0.3322} & \textbf{0.3322} & \textbf{0.9967} & \textbf{0.9967} & 2.3256 & \textbf{1.9934} \\
+        inithx.i.1 & \textbf{0.0053} & 0.0160 & \textbf{0.0107} & 0.0214 & \textbf{0.016} & 0.0267 & \textbf{0.0214} & 0.0535 \\
+        inithx.i.2 & \textbf{0.0072} & 0.0644 & \textbf{0.0143} & 0.0715 & \textbf{0.0215} & 0.0644 & \textbf{0.0429} & 0.0715 \\
+        inithx.i.3 & \textbf{0.0072} & 0.0716 & \textbf{0.0143} & 0.0573 & \textbf{0.0215} & 0.0931 & \textbf{0.043} & 0.0787 \\
+        jean & \textbf{0.0} & \textbf{0.0} & \textbf{0.3937} & \textbf{0.3937} & \textbf{0.7874} & \textbf{0.7874} & 1.9685 & \textbf{1.5748} \\
+        le450_15a & \textbf{0.5387} & 0.6121 & \textbf{0.9305} & 0.9549 & \textbf{1.3467} & \textbf{1.3467} & \textbf{1.7997} & \textbf{1.7997} \\
+        le450_25a & 0.0484 & \textbf{0.0363} & \textbf{0.1695} & \textbf{0.1695} & \textbf{0.2906} & \textbf{0.2906} & 0.4600 & \textbf{0.3995} \\
+        le450_25b & 0.0605 & \textbf{0.0242} & 0.1815 & \textbf{0.1573} & \textbf{0.2662} & 0.2783 & \textbf{0.3994} & 0.4115 \\
+        le450_5c & 1.0813 & \textbf{0.2244} & 5.9574 & \textbf{5.0597} & \textbf{10.7926} & \textbf{10.7926} & 29.2768 & \textbf{29.2053} \\
+        le450_5d & 1.6398 & \textbf{0.041} & 6.0674 & \textbf{4.94} & 11.1817 & \textbf{10.9665} & \textbf{29.22} & \textbf{29.22} \\
+        miles1000 & 0.0933 & \textbf{0.0622} & 0.1244 & \textbf{0.0622} & 0.1555 & \textbf{0.0933} & 0.1866 & \textbf{0.1244} \\
+        miles1500 & 0.0192 & \textbf{0.0} & 0.0385 & \textbf{0.0192} & 0.0577 & \textbf{0.0385} & 0.0770 & \textbf{0.0577} \\
+        miles250 & 0.2584 & \textbf{0.0} & \textbf{0.5168} & \textbf{0.5168} & 1.8088 & \textbf{1.0336} & 2.8424 & \textbf{2.584} \\
+        miles500 & 0.1709 & \textbf{0.0} & 0.2564 & \textbf{0.0855} & 0.2564 & \textbf{0.1709} & \textbf{0.3419} & \textbf{0.3419} \\
+        miles750 & \textbf{0.0947} & \textbf{0.0947} & 0.1420 & \textbf{0.0947} & 0.1893 & \textbf{0.142} & 0.2366 & \textbf{0.1893} \\
+        mulsol.i.1 & \textbf{0.0} & \textbf{0.0} & \textbf{0.0255} & \textbf{0.0255} & \textbf{0.051} & \textbf{0.051} & \textbf{0.0764} & \textbf{0.0764} \\
+        mulsol.i.2 & \textbf{0.0} & 0.0257 & \textbf{0.0515} & \textbf{0.0515} & \textbf{0.103} & \textbf{0.103} & \textbf{0.1544} & \textbf{0.1544} \\
+        mulsol.i.3 & \textbf{0.0} & \textbf{0.0} & \textbf{0.0511} & \textbf{0.0511} & \textbf{0.1021} & \textbf{0.1021} & \textbf{0.1532} & \textbf{0.1532} \\
+        mulsol.i.4 & \textbf{0.0} & \textbf{0.0} & \textbf{0.0507} & \textbf{0.0507} & \textbf{0.1014} & \textbf{0.1014} & \textbf{0.1521} & \textbf{0.1521} \\
+        mulsol.i.5 & \textbf{0.0} & \textbf{0.0} & \textbf{0.0252} & \textbf{0.0252} & \textbf{0.0755} & \textbf{0.0755} & \textbf{0.1258} & \textbf{0.1258} \\
+        myciel3 & \textbf{0.0} & \textbf{0.0} & \textbf{5.0} & \textbf{5.0} & \textbf{20.0} & \textbf{20.0} & \textbf{100.0} & \textbf{100.0} \\
+        myciel4 & \textbf{0.0} & \textbf{0.0} & \textbf{1.4085} & \textbf{1.4085} & 7.0423 & \textbf{5.6338} & \textbf{23.9437} & \textbf{23.9437} \\
+        myciel5 & \textbf{0.0} & \textbf{0.0} & \textbf{0.4237} & \textbf{0.4237} & 2.1186 & \textbf{1.6949} & 8.0508 & \textbf{7.6271} \\
+        myciel6 & \textbf{0.0} & \textbf{0.0} & \textbf{0.1325} & \textbf{0.1325} & \textbf{0.6623} & \textbf{0.6623} & \textbf{2.5166} & 2.6490 \\
+        queen5_5 & \textbf{0.0} & \textbf{0.0} & 10.0000 & \textbf{7.5} & 18.7500 & \textbf{18.125} & 38.7500 & \textbf{37.5} \\
+        queen6_6 & 2.0690 & \textbf{0.6897} & 3.7931 & \textbf{2.069} & 7.2414 & \textbf{4.8276} & 11.7241 & \textbf{11.0345} \\
+        queen7_7 & 2.7311 & \textbf{0.0} & 5.2521 & \textbf{3.9916} & 8.4034 & \textbf{7.563} & 13.2353 & \textbf{12.605} \\
+        queen8_12 & 0.6579 & \textbf{0.1462} & 0.9503 & \textbf{0.6579} & 1.7544 & \textbf{1.462} & 2.7047 & \textbf{2.3392} \\
+        queen8_8 & 0.9615 & \textbf{0.6868} & 1.5110 & \textbf{1.3736} & 4.3956 & \textbf{3.2967} & 6.5934 & \textbf{5.9066} \\
+        queen9_9 & 1.1364 & \textbf{0.5682} & 1.9886 & \textbf{0.7576} & 3.4091 & \textbf{2.8409} & 5.1136 & \textbf{4.6402} \\
+        school1 & 1.6758 & \textbf{0.0} & 2.8751 & \textbf{0.6651} & 2.1524 & \textbf{1.4402} & 3.9330 & \textbf{2.2362} \\
+        school1_nsh & 2.3542 & \textbf{0.0274} & 2.4364 & \textbf{0.5543} & 3.0728 & \textbf{1.2866} & 3.0181 & \textbf{1.9915} \\
+        zeroin.i.1 & \textbf{0.0} & 0.0244 & \textbf{0.0244} & 0.0488 & \textbf{0.0488} & 0.0732 & \textbf{0.0732} & \textbf{0.0732} \\
+        zeroin.i.2 & \textbf{0.0} & 0.0565 & \textbf{0.0282} & 0.0565 & 0.0847 & \textbf{0.0565} & 0.1130 & \textbf{0.0847} \\
+        zeroin.i.3 & \textbf{0.0} & 0.0282 & \textbf{0.0282} & 0.0565 & \textbf{0.0847} & \textbf{0.0847} & \textbf{0.113} & \textbf{0.113} \\
+        \bottomrule
+    \end{tabular}
+    }
+\end{table}
+
+\end{document}
